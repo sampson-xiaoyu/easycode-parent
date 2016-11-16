@@ -23,7 +23,7 @@
   </properties>
 	
 	
-	<repositories>
+	 <repositories>
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
@@ -39,7 +39,7 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
-	</repositories>
+	</repositories> 
 	
   <dependencyManagement>
 		<dependencies>
@@ -66,6 +66,20 @@
 				<version>${spring-framework.version}</version>
 			</dependency>
 			
+			<!-- Testing -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring-framework.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+			
 			<!-- jackson -->
 			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
@@ -84,12 +98,7 @@
 				<groupId>com.easycode</groupId>
 				<artifactId>easycode-kafkaClient</artifactId>
 				<version>${easycode-snapshots.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.easycode</groupId>
-				<artifactId>easycode-search</artifactId>
-				<version>${easycode-snapshots.version}</version>
-			</dependency>
+			</dependency>	
 			<dependency>
 				<groupId>com.easycode</groupId>
 				<artifactId>easycode-redisClient</artifactId>
@@ -99,8 +108,12 @@
 				<groupId>com.easycode</groupId>
 				<artifactId>easycode-common</artifactId>
 				<version>${easycode-snapshots.version}</version>
-			</dependency>
-					
+			</dependency> 
+			<dependency>
+				<groupId>com.easycode</groupId>
+				<artifactId>easycode-search</artifactId>
+				<version>${easycode-snapshots.version}</version>
+			</dependency>		
 		</dependencies>
 		
 	</dependencyManagement>
