@@ -22,6 +22,19 @@
 
   </properties>
 	
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>releases</name>
+			<url>http://127.0.0.1:8089/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>snapshots</name>
+			<url>http://127.0.0.1:8089/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	
 	 <repositories>
 		<repository>
@@ -71,13 +84,13 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-test</artifactId>
 				<version>${spring-framework.version}</version>
-				<scope>test</scope>
+				<!--<scope>test</scope> -->
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.11</version>
-				<scope>test</scope>
+				<!-- <scope>test</scope> -->
 			</dependency>
 			
 			<!-- jackson -->
@@ -113,7 +126,12 @@
 				<groupId>com.easycode</groupId>
 				<artifactId>easycode-search</artifactId>
 				<version>${easycode-snapshots.version}</version>
-			</dependency>		
+			</dependency>	
+			<dependency>
+				<groupId>com.easycode</groupId>
+				<artifactId>easycode-base</artifactId>
+				<version>${easycode-snapshots.version}</version>
+			</dependency>			
 		</dependencies>
 		
 	</dependencyManagement>
