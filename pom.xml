@@ -22,7 +22,7 @@
 
   </properties>
 	
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
@@ -52,7 +52,7 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
-	</repositories> 
+	</repositories>  -->
 	
   <dependencyManagement>
 		<dependencies>
@@ -106,6 +106,24 @@
 				<version>2.6.3</version>
 			</dependency>
 			
+			
+			<!-- AspectJ -->
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>1.6.12</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjrt</artifactId>
+				<version>1.6.12</version>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>2.2.2</version>
+			</dependency>
+			
 			<!-- easycode -->
 			<dependency>
 				<groupId>com.easycode</groupId>
@@ -148,6 +166,12 @@
 						<target>${java.version}</target>
 						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
+				</plugin>
+				
+				<plugin>
+					<groupId>org.eclipse.jetty</groupId>
+					<artifactId>jetty-maven-plugin</artifactId>
+					<version>9.2.11.v20150529</version>
 				</plugin>
 				
 				<plugin>
