@@ -22,16 +22,16 @@
 
   </properties>
 	
-	<!--  <distributionManagement>
+	<distributionManagement>
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
-			<url>http://127.0.0.1:8089/nexus/content/repositories/releases/</url>
+			<url>http://192.168.0.106:8089/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>snapshots</name>
-			<url>http://127.0.0.1:8089/nexus/content/repositories/snapshots/</url>
+			<url>http://192.168.0.106:8089/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	
@@ -40,19 +40,19 @@
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
-			<url>http://127.0.0.1:8089/nexus/content/repositories/releases/</url>
+			<url>http://192.168.0.106:8089/nexus/content/repositories/releases/</url>
 		</repository>
 		<repository>
 			<id>snapshots</id>
 			<name>snapshots</name>
-			<url>http://127.0.0.1:8089/nexus/content/repositories/snapshots/</url>
+			<url>http://192.168.0.106:8089/nexus/content/repositories/snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 				<updatePolicy>always</updatePolicy>
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
-	</repositories>  -->
+	</repositories>
 	
   <dependencyManagement> 
 		<dependencies>
