@@ -7,7 +7,7 @@
   <packaging>pom</packaging>
   <name>easycode-parent</name>
   
-  <properties>
+  <properties> 
 	
 		<!-- Generic -->
 		<java.version>1.7</java.version>
