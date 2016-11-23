@@ -22,7 +22,7 @@
 
   </properties>
 	
-	<distributionManagement>
+	<!-- <distributionManagement>
 		<repository>
 			<id>releases</id>
 			<name>releases</name>
@@ -52,7 +52,7 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
-	</repositories>
+	</repositories> -->
 	
   <dependencyManagement> 
 		<dependencies>
