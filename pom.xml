@@ -106,6 +106,20 @@
 				<version>2.6.3</version>
 			</dependency>
 			
+			<!-- commons -->
+			<dependency>
+				<groupId>commons-httpclient</groupId>
+				<artifactId>commons-httpclient</artifactId>
+				<version>3.0.1</version>
+			</dependency>
+			
+			<!-- Logging with SLF4J & Log4j -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>1.7.21</version>
+				<!-- <scope>runtime</scope> -->
+			</dependency>
 			
 			<!-- AspectJ -->
 			<dependency>
@@ -149,7 +163,12 @@
 				<groupId>com.easycode</groupId>
 				<artifactId>easycode-base</artifactId>
 				<version>${easycode-snapshots.version}</version>
-			</dependency>			
+			</dependency>	
+			<dependency>
+				<groupId>com.easycode</groupId>
+				<artifactId>easycode-thirdpay</artifactId>
+				<version>${easycode-snapshots.version}</version>
+			</dependency>					
 		</dependencies>
 		
 	</dependencyManagement>
